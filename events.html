@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - EventX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/a7/47/7f/a7477f5b51e89856d0694d4c02dcd506.jpg" alt="EventX Logo">
+            <h1>EventX</h1>
+        </div>
+        <nav class="navbar-links">
+            <a href="homepage.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2>Popular Events</h2>
+
+        <div class="event">
+            <img src="https://wallpapers.com/images/featured/bts-concert-5vxfr7vnzuwkxknj.jpg" alt="Event 1" onclick="showEventDetails('event1')">
+            <p>Concert</p>
+            <p>Price: ₹6,00,000</p>
+            <button onclick="addToCart('Concert', 600000)">Add to Cart</button>
+        </div>
+
+        <div class="event">
+            <img src="https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/53890/article_full%403x.jpg" alt="Event 2" onclick="showEventDetails('event2')">
+            <p>Theatre</p>
+            <p>Price: ₹15,000</p>
+            <button onclick="addToCart('Theatre', 15000)">Add to Cart</button>
+        </div>
+
+        <div class="event">
+            <img src="https://images.tribuneindia.com/cms/gall_content/2018/8/2018_8$largeimg12_Sunday_2018_013601199.jpg" alt="Event 3" onclick="showEventDetails('event3')">
+            <p>Workshop</p>
+            <p>Price: ₹10,000</p>
+            <button onclick="addToCart('Workshop', 10000)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <h2>More Events</h2>
+
+        <div class="event">
+            <img src="https://a.storyblok.com/f/188325/1920x1280/41e681c422/alexandre-pellaes-6vajp0pscx0-unsplash-1-1.jpg" alt="Event 4" onclick="showEventDetails('event4')">
+            <p>Technical Conference</p>
+            <p>Price: ₹40,000</p>
+            <button onclick="addToCart('Technical Conference', 40000)">Add to Cart</button>
+        </div>
+
+        <div class="event">
+            <img src="https://www.ohio.edu/sites/ohio.edu.news/files/styles/500_max_height/public/2020-10/2015%20UJE_exhibition%20Display.jpg?itok=08RB5XM0" alt="Event 5" onclick="showEventDetails('event5')">
+            <p>Art Exhibition</p>
+            <p>Price: ₹1,00,000</p>
+            <button onclick="addToCart('Art Exhibition', 100000)">Add to Cart</button>
+        </div>
+
+        <div class="event">
+            <img src="https://d2r4vjqv0e4e2o.cloudfront.net/blog/wp-content/uploads/2023/12/29123819/Blog-Feature-Images-1920-%C3%97-880-px-1200-%C3%97-628-px-1080-%C3%97-628-px-1.png" alt="Event 6" onclick="showEventDetails('event6')">
+            <p>Food Festivals</p>
+            <button onclick="addToCart('Food Festivals', 10000)">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="event">
+            <img src="https://sbvpa.org/wp-content/uploads/2022/08/sports-tools_53876-138077-1571x1024.jpg" alt="Event 7" onclick="showEventDetails('event7')">
+            <p>Sports Tournaments</p>
+            <p>Price: ₹20,000</p>
+            <button onclick="addToCart('Sports Tournaments', 20000)">Add to Cart</button>
+        </div>
+
+        <div class="event">
+            <img src="https://st2.depositphotos.com/3591429/7357/i/950/depositphotos_73574137-stock-photo-business-people-seminar-conference.jpg" alt="Event 8" onclick="showEventDetails('event8')">
+            <p>Business Seminar</p>
+            <p>Price: ₹80,000</p>
+            <button onclick="addToCart('Business Seminar', 80000)">Add to Cart</button>
+        </div>
+
+        <div class="event">
+            <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt232f3c6fd82b0bcb/665641195a777f18fbb19860/Birthday_Kids_1.jpeg?q=70&width=3840&auto=webp" alt="Event 9" onclick="showEventDetails('event9')">
+            <p>Family Festivals</p>
+            <p>Price: ₹40,000</p>
+            <button onclick="addToCart('Family Festivals', 40000)">Add to Cart</button>
+        </div>
+    </section>
+
+    <div id="eventDetails"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

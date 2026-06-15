@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Payment</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+
+<img src="https://i.pinimg.com/736x/a7/47/7f/a7477f5b51e89856d0694d4c02dcd506.jpg" width="50">
+
+<h1>EventX</h1>
+
+</div>
+
+<nav class="navbar-links">
+
+<a href="homepage.html">Home</a>
+
+<a href="events.html">Events</a>
+
+<a href="about.html">About Us</a>
+
+<a href="contact.html">Contact Us</a>
+
+<a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+
+</nav>
+
+</header>
+
+<section class="payment-section">
+
+<h2>Payment</h2>
+
+<form onsubmit="paymentSuccess(event)">
+
+<label>Shipping Address</label>
+
+<textarea id="address" required></textarea>
+
+<label>
+
+<input type="radio" name="payment-method" value="credit-card" onclick="showPaymentFields('credit-card')">
+
+Credit Card
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="radio" name="payment-method" value="debit-card" onclick="showPaymentFields('debit-card')">
+
+Debit Card
+
+</label>
+
+<br><br>
+
+<label>
+
+<input type="radio" name="payment-method" value="upi" onclick="showPaymentFields('upi')">
+
+UPI
+
+</label>
+
+<br><br>
+
+<div id="payment-fields"></div>
+
+<button type="submit">Pay Now</button>
+
+</form>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
